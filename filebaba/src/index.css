@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+*{
+  font-family: 'Urbanist', sans-serif;
+}
+
+/* Container for full-page scrolling layout */
+.landing-page {
+  @apply overflow-y-auto h-screen bg-gray-50 text-gray-800;
+}
+
+/* For hero or main section content */
+.landing-page-content {
+  @apply overflow-visible px-4 md:px-8 py-6;
+}
+
+/* Reusable button with subtle hover and spacing */
+.card-btn {
+  @apply flex items-center gap-3 text-[12px] font-medium text-gray-600 hover:text-purple-600 transition-colors duration-200;
+}
+
+/* Add button style for list items, uploads, etc. */
+.add-btn {
+  @apply flex items-center gap-1.5 text-xs md:text-sm font-medium text-green-700 whitespace-nowrap hover:text-green-800 transition-colors duration-200;
+}
+
+/* Filled-style button, like "Create", "Upload", etc. */
+.add-btn-fill {
+  @apply text-white bg-purple-600 hover:bg-purple-700 focus:ring-2 focus:ring-purple-400 focus:outline-none rounded-md px-3 py-1.5 transition-all duration-200;
+}
